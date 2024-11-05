@@ -1,23 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
+import ClassBasedComponent from './Components/ClassBasedComponent';
+import Demo1 from './Components/Demo1';
+import EventFunction from './Components/EventFunction';
+import StateComponent from './Components/StateComponent';
+import StateInClassComponent from './Components/StateInClassComponent';
+import ValueUpdateStateComponent from './Components/ValueUpdateStateComponent';
+import FindReplaceStateComponent from './Components/FindReplaceStateComponent';
+import PropsComponentGroup from './Components/PropsComponentGroup';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <ClassBasedComponent/> */}
+      {/* <Demo1/> */}
+      {/* <EventFunction/> */}
+      {/* <StateComponent/> */}
+      {/* <StateInClassComponent/> */}
+      {/* <ValueUpdateStateComponent/> */}
+      {/* <FindReplaceStateComponent/> */}
+      <PropsComponentGroup/>
     </div>
   );
 }
