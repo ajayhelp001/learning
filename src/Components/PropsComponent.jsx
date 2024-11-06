@@ -8,7 +8,7 @@ const PropsComponent = ({productName, color, productAmount, productImg, productL
           </div>
           <div className="">
             <div>
-              <h3 className="text-sm text-gray-700">
+              <h3 className="text-lg text-gray-700">
                 <a href={productLink}>{productName}</a>
               </h3>
               <p className="mt-1 text-sm text-gray-500">{color}</p>
