@@ -8,6 +8,14 @@ import StateInClassComponent from './Components/StateInClassComponent';
 import ValueUpdateStateComponent from './Components/ValueUpdateStateComponent';
 import FindReplaceStateComponent from './Components/FindReplaceStateComponent';
 import PropsComponentGroup from './Components/PropsComponentGroup';
+import GetInputValue from './Components/GetInputValue';
+import HideShowToggle from './Components/HideShowToggle';
+import FormHeandaling from './Components/FormHeandaling';
+import ConditionalRendring from './Components/ConditionalRendring';
+import PassPropsFunctionFroup from './Components/PassPropsFunctionFroup';
+import FormValidation from './Components/FormValidation';
+import Constructor from './Components/Constructor';
+import RenderMethodGroup from './GroupFile/RenderMethodGroup';
 
 function App() {
   return (
@@ -19,7 +27,15 @@ function App() {
       {/* <StateInClassComponent/> */}
       {/* <ValueUpdateStateComponent/> */}
       {/* <FindReplaceStateComponent/> */}
-      <PropsComponentGroup/>
+      {/* <PropsComponentGroup/> */}
+      {/* <GetInputValue/> */}
+      {/* <HideShowToggle/> */}
+      {/* <FormHeandaling/> */}
+      {/* <ConditionalRendring/> */}
+      {/* <PassPropsFunctionFroup/> */}
+      {/* <FormValidation/> */}
+      {/* <Constructor/> */}
+      <RenderMethodGroup/>
     </div>
   );
 }
