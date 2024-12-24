@@ -16,6 +16,8 @@ import PassPropsFunctionFroup from './Components/PassPropsFunctionFroup';
 import FormValidation from './Components/FormValidation';
 import Constructor from './Components/Constructor';
 import RenderMethodGroup from './GroupFile/RenderMethodGroup';
+import ComponentDidMount from './Components/ComponentDidMount';
+import ComponentDidUpdate from './Components/ComponentDidUpdate';
 
 function App() {
   return (
@@ -35,7 +37,9 @@ function App() {
       {/* <PassPropsFunctionFroup/> */}
       {/* <FormValidation/> */}
       {/* <Constructor/> */}
-      <RenderMethodGroup/>
+      {/* <RenderMethodGroup/> */}
+      {/* {<ComponentDidMount/>} */}
+      {<ComponentDidUpdate/>}
     </div>
   );
 }
