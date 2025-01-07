@@ -18,6 +18,18 @@ import Constructor from './Components/Constructor';
 import RenderMethodGroup from './GroupFile/RenderMethodGroup';
 import ComponentDidMount from './Components/ComponentDidMount';
 import ComponentDidUpdate from './Components/ComponentDidUpdate';
+import ShouldComponentUpdate from './Components/ShouldComponentUpdate';
+import GetSnapshotBeforeUpdate from './Components/GetSnapshotBeforeUpdateMethod';
+import GetSnapshotBeforeUpdateMethod from './Components/GetSnapshotBeforeUpdateMethod';
+import ComponentWillUpdate from './Components/ComponentWillUpdate';
+import UseState from './Components/Hooks/UseState';
+import UseEffectHook from './Components/Hooks/UseEffectHook';
+import UseEffectWithPropsParent from './Components/Hooks/UseEffectWithPropsParent';
+import UseEffectWithCondition from './Components/Hooks/UseEffectWithCondition';
+import UseEffectWithConditionParent from './Components/Hooks/UseEffectWithConditionParent';
+import UseEffectExample from './Components/Hooks/UseEffectExample';
+import UseMemoHooks from './Components/Hooks/UseMemoHooks';
+import UseCallBack from './Components/Hooks/UseCallBack';
 
 function App() {
   return (
@@ -39,7 +51,21 @@ function App() {
       {/* <Constructor/> */}
       {/* <RenderMethodGroup/> */}
       {/* {<ComponentDidMount/>} */}
-      {<ComponentDidUpdate/>}
+      {/* {<ComponentDidUpdate/>} */}
+      {/* <ShouldComponentUpdate/> */}
+      {/* <GetSnapshotBeforeUpdateMethod/> */}
+      {/* <ComponentWillUpdate/> */}
+      
+      {/* =========== Hooks========= */}
+
+      {/* <UseState/> */}
+      {/* <UseEffectHook/> */}
+      {/* <UseEffectWithPropsParent/> */}
+      {/* <UseEffectWithCondition/> */}
+      {/* <UseEffectWithConditionParent/> */}
+      {/* <UseEffectExample/> */}
+      {/* <UseMemoHooks/> */}
+      <UseCallBack/>
     </div>
   );
 }
