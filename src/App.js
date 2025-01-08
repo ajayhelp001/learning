@@ -30,6 +30,15 @@ import UseEffectWithConditionParent from './Components/Hooks/UseEffectWithCondit
 import UseEffectExample from './Components/Hooks/UseEffectExample';
 import UseMemoHooks from './Components/Hooks/UseMemoHooks';
 import UseCallBack from './Components/Hooks/UseCallBack';
+import ContextWithApiHooks from './Components/ContextApiMethod/ContextWithApiHooks';
+import SecondComponent from './Components/ContextApiMethod/SecondComponent';
+import UseRefHook from './Components/Hooks/UseRefHook';
+import UserDataShow from './Prectice/UserDataShow';
+import UserPost from './Prectice/UserPost';
+import ForwardRefHook from './Components/Hooks/ForwardRefHook';
+import ArrayListing from './Components/ArrayMap/ArrayListing';
+import BootstrapArrayListing from './Components/ArrayMap/BootstrapArrayListing';
+import NestedArrayWithBootstrap from './Components/ArrayMap/NestedArrayWithBootstrap';
 
 function App() {
   return (
@@ -65,7 +74,21 @@ function App() {
       {/* <UseEffectWithConditionParent/> */}
       {/* <UseEffectExample/> */}
       {/* <UseMemoHooks/> */}
-      <UseCallBack/>
+      {/* <UseCallBack/> */}
+      {/* <UseRefHook/> */}
+      {/* <ForwardRefHook/> */}
+
+      {/* =========== Context Api========= */}
+      {/* <ContextWithApiHooks/> */}
+
+      {/* ====== Array Maps ==== */}
+      {/* <ArrayListing/> */}
+      {/* <BootstrapArrayListing/> */}
+      <NestedArrayWithBootstrap/>
+
+      {/* ====== API Intigretion==== */}
+      {/* <UserDataShow/> */}
+      {/* <UserPost/> */}
     </div>
   );
 }
