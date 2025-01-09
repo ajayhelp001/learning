@@ -39,6 +39,8 @@ import ForwardRefHook from './Components/Hooks/ForwardRefHook';
 import ArrayListing from './Components/ArrayMap/ArrayListing';
 import BootstrapArrayListing from './Components/ArrayMap/BootstrapArrayListing';
 import NestedArrayWithBootstrap from './Components/ArrayMap/NestedArrayWithBootstrap';
+import ReuseComponent from './Components/ReuseComponenet/ReuseComponent';
+import LiftingStateUp from './Components/ReuseComponenet/LiftingStateUp';
 
 function App() {
   return (
@@ -84,7 +86,12 @@ function App() {
       {/* ====== Array Maps ==== */}
       {/* <ArrayListing/> */}
       {/* <BootstrapArrayListing/> */}
-      <NestedArrayWithBootstrap/>
+      {/* <NestedArrayWithBootstrap/> */}
+
+      {/* ====== ReuseComponent==== */}
+      {/* <ReuseComponent/> */}
+      <LiftingStateUp/>
+
 
       {/* ====== API Intigretion==== */}
       {/* <UserDataShow/> */}
