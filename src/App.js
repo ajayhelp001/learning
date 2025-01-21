@@ -41,10 +41,14 @@ import BootstrapArrayListing from './Components/ArrayMap/BootstrapArrayListing';
 import NestedArrayWithBootstrap from './Components/ArrayMap/NestedArrayWithBootstrap';
 import ReuseComponent from './Components/ReuseComponenet/ReuseComponent';
 import LiftingStateUp from './Components/ReuseComponenet/LiftingStateUp';
+import ControlComponent from './Components/ControlComponent/ControlComponent';
+import UnControlComponent from './Components/ControlComponent/UnControlComponent';
+import UseReducer from './Components/Hooks/UseReducer';
+import HocAssembleGroup from './Components/HOC-Component/HocAssembleGroup';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container">
       {/* <ClassBasedComponent/> */}
       {/* <Demo1/> */}
       {/* <EventFunction/> */}
@@ -79,6 +83,7 @@ function App() {
       {/* <UseCallBack/> */}
       {/* <UseRefHook/> */}
       {/* <ForwardRefHook/> */}
+      {/* <UseReducer/> */}
 
       {/* =========== Context Api========= */}
       {/* <ContextWithApiHooks/> */}
@@ -90,12 +95,18 @@ function App() {
 
       {/* ====== ReuseComponent==== */}
       {/* <ReuseComponent/> */}
-      <LiftingStateUp/>
+      {/* <LiftingStateUp/> */}
 
+      {/* ====== Control Component==== */}
+      {/* <ControlComponent/> */}
+      {/* <UnControlComponent/> */}
 
       {/* ====== API Intigretion==== */}
       {/* <UserDataShow/> */}
       {/* <UserPost/> */}
+
+      {/* ====== HOC Component ==== */}
+      <HocAssembleGroup/>
     </div>
   );
 }
