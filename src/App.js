@@ -45,6 +45,11 @@ import ControlComponent from './Components/ControlComponent/ControlComponent';
 import UnControlComponent from './Components/ControlComponent/UnControlComponent';
 import UseReducer from './Components/Hooks/UseReducer';
 import HocAssembleGroup from './Components/HOC-Component/HocAssembleGroup';
+import PreviousState from './Components/Hooks/PreviousState';
+import PreviousPropsParent from './Components/Hooks/PreviousPropsParent';
+import StateWithObject from './Components/Hooks/StateWithObject';
+import CodeSpliting from './Components/SplitingLezyLodingSuspense/CodeSpliting';
+import LezyLodedSuspense from './Components/SplitingLezyLodingSuspense/LezyLodedSuspense';
 
 function App() {
   return (
@@ -84,6 +89,9 @@ function App() {
       {/* <UseRefHook/> */}
       {/* <ForwardRefHook/> */}
       {/* <UseReducer/> */}
+      {/* <PreviousState/> */}
+      {/* <PreviousPropsParent/> */}
+      {/* <StateWithObject/> */}
 
       {/* =========== Context Api========= */}
       {/* <ContextWithApiHooks/> */}
@@ -106,7 +114,13 @@ function App() {
       {/* <UserPost/> */}
 
       {/* ====== HOC Component ==== */}
-      <HocAssembleGroup/>
+      {/* <HocAssembleGroup/> */}
+
+      {/* ====== Spliting LezyLoding Suspense Component ==== */}
+      {/* <CodeSpliting/> */}
+      <LezyLodedSuspense/>
+
+
     </div>
   );
 }
