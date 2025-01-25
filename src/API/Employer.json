@@ -1,0 +1,73 @@
+[
+    {
+      "name": "Amit Sharma",
+      "email": "amit.sharma@example.com",
+      "mobile": "9876543210",
+      "salary": 50000,
+      "designation": "Software Engineer"
+    },
+    {
+      "name": "Pooja Mehta",
+      "email": "pooja.mehta@example.com",
+      "mobile": "9123456789",
+      "salary": 60000,
+      "designation": "Product Manager"
+    },
+    {
+      "name": "Rohit Singh",
+      "email": "rohit.singh@example.com",
+      "mobile": "9012345678",
+      "salary": 45000,
+      "designation": "UI/UX Designer"
+    },
+    {
+      "name": "Neha Gupta",
+      "email": "neha.gupta@example.com",
+      "mobile": "9823456712",
+      "salary": 55000,
+      "designation": "HR Manager"
+    },
+    {
+      "name": "Vikas Verma",
+      "email": "vikas.verma@example.com",
+      "mobile": "9871234567",
+      "salary": 70000,
+      "designation": "Team Lead"
+    },
+    {
+      "name": "Sneha Kapoor",
+      "email": "sneha.kapoor@example.com",
+      "mobile": "9812345670",
+      "salary": 48000,
+      "designation": "Marketing Specialist"
+    },
+    {
+      "name": "Arjun Malhotra",
+      "email": "arjun.malhotra@example.com",
+      "mobile": "9976543210",
+      "salary": 52000,
+      "designation": "Business Analyst"
+    },
+    {
+      "name": "Priya Chawla",
+      "email": "priya.chawla@example.com",
+      "mobile": "9845671234",
+      "salary": 46000,
+      "designation": "Content Writer"
+    },
+    {
+      "name": "Karan Jain",
+      "email": "karan.jain@example.com",
+      "mobile": "9987654321",
+      "salary": 58000,
+      "designation": "Data Scientist"
+    },
+    {
+      "name": "Anjali Deshmukh",
+      "email": "anjali.deshmukh@example.com",
+      "mobile": "9812341234",
+      "salary": 62000,
+      "designation": "Project Manager"
+    }
+  ]
+  

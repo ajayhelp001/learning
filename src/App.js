@@ -50,6 +50,10 @@ import PreviousPropsParent from './Components/Hooks/PreviousPropsParent';
 import StateWithObject from './Components/Hooks/StateWithObject';
 import CodeSpliting from './Components/SplitingLezyLodingSuspense/CodeSpliting';
 import LezyLodedSuspense from './Components/SplitingLezyLodingSuspense/LezyLodedSuspense';
+import Apicaoolling from './Components/ApiCalling/Apicaoolling';
+import ApiForm from './Components/ApiCalling/ApiForm';
+import FormPostApi from './Components/FormApis/FormPostApi';
+import DeletePostApi from './Components/FormApis/DeletePostApi';
 
 function App() {
   return (
@@ -118,7 +122,11 @@ function App() {
 
       {/* ====== Spliting LezyLoding Suspense Component ==== */}
       {/* <CodeSpliting/> */}
-      <LezyLodedSuspense/>
+      {/* <LezyLodedSuspense/> */}
+      {/* <Apicaoolling/> */}
+      {/* <ApiForm/> */}
+      {/* <FormPostApi/> */}
+      <DeletePostApi/>
 
 
     </div>
