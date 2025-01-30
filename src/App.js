@@ -54,82 +54,111 @@ import Apicaoolling from './Components/ApiCalling/Apicaoolling';
 import ApiForm from './Components/ApiCalling/ApiForm';
 import FormPostApi from './Components/FormApis/FormPostApi';
 import DeletePostApi from './Components/FormApis/DeletePostApi';
+import FormPostApi2 from './Components/FormApis/FormPostApi2';
+import PreFilledFormData from './Components/FormApis/PreFilledFormData';
+import PutAPIMethod from './Components/FormApis/PutAPIMethod';
+import MyCounterApp from './Components/CustomHooks/MyCounterApp';
+import AxiosGetRequest from './Axios/AxiosGetRequest';
+import AxiosPostRequest from './Axios/AxiosPostRequest';
+import AxiosPutRequest from './Axios/AxiosPutRequest';
+import AxiosDeleteRequest from './Axios/AxiosDeleteRequest';
+
 
 function App() {
   return (
-    <div className="App container">
-      {/* <ClassBasedComponent/> */}
-      {/* <Demo1/> */}
-      {/* <EventFunction/> */}
-      {/* <StateComponent/> */}
-      {/* <StateInClassComponent/> */}
-      {/* <ValueUpdateStateComponent/> */}
-      {/* <FindReplaceStateComponent/> */}
-      {/* <PropsComponentGroup/> */}
-      {/* <GetInputValue/> */}
-      {/* <HideShowToggle/> */}
-      {/* <FormHeandaling/> */}
-      {/* <ConditionalRendring/> */}
-      {/* <PassPropsFunctionFroup/> */}
-      {/* <FormValidation/> */}
-      {/* <Constructor/> */}
-      {/* <RenderMethodGroup/> */}
-      {/* {<ComponentDidMount/>} */}
-      {/* {<ComponentDidUpdate/>} */}
-      {/* <ShouldComponentUpdate/> */}
-      {/* <GetSnapshotBeforeUpdateMethod/> */}
-      {/* <ComponentWillUpdate/> */}
+    <>
+      <div className="App container">
+
+        
+        {/* <ClassBasedComponent/> */}
+        {/* <Demo1/> */}
+        {/* <EventFunction/> */}
+        {/* <StateComponent/> */}
+        {/* <StateInClassComponent/> */}
+        {/* <ValueUpdateStateComponent/> */}
+        {/* <FindReplaceStateComponent/> */}
+        {/* <PropsComponentGroup/> */}
+        {/* <GetInputValue/> */}
+        {/* <HideShowToggle/> */}
+        {/* <FormHeandaling/> */}
+        {/* <ConditionalRendring/> */}
+        {/* <PassPropsFunctionFroup/> */}
+        {/* <FormValidation/> */}
+        {/* <Constructor/> */}
+        {/* <RenderMethodGroup/> */}
+        {/* {<ComponentDidMount/>} */}
+        {/* {<ComponentDidUpdate/>} */}
+        {/* <ShouldComponentUpdate/> */}
+        {/* <GetSnapshotBeforeUpdateMethod/> */}
+        {/* <ComponentWillUpdate/> */}
+        
+        {/* =========== Hooks========= */}
+
+        {/* <UseState/> */}
+        {/* <UseEffectHook/> */}
+        {/* <UseEffectWithPropsParent/> */}
+        {/* <UseEffectWithCondition/> */}
+        {/* <UseEffectWithConditionParent/> */}
+        {/* <UseEffectExample/> */}
+        {/* <UseMemoHooks/> */}
+        {/* <UseCallBack/> */}
+        {/* <UseRefHook/> */}
+        {/* <ForwardRefHook/> */}
+        {/* <UseReducer/> */}
+        {/* <PreviousState/> */}
+        {/* <PreviousPropsParent/> */}
+        {/* <StateWithObject/> */}
+
+        {/* =========== Context Api========= */}
+        {/* <ContextWithApiHooks/> */}
+
+        {/* ====== Array Maps ==== */}
+        {/* <ArrayListing/> */}
+        {/* <BootstrapArrayListing/> */}
+        {/* <NestedArrayWithBootstrap/> */}
+
+        {/* ====== ReuseComponent==== */}
+        {/* <ReuseComponent/> */}
+        {/* <LiftingStateUp/> */}
+
+        {/* ====== Control Component==== */}
+        {/* <ControlComponent/> */}
+        {/* <UnControlComponent/> */}
+
+        {/* ====== API Intigretion==== */}
+        {/* <UserDataShow/> */}
+        {/* <UserPost/> */}
+
+        {/* ====== HOC Component ==== */}
+        {/* <HocAssembleGroup/> */}
+
+        {/* ====== Spliting LezyLoding Suspense Component ==== */}
+        {/* <CodeSpliting/> */}
+        {/* <LezyLodedSuspense/> */}
+        {/* <Apicaoolling/> */}
+        {/* <ApiForm/> */}
+        {/* <FormPostApi/> */}
+        {/* <FormPostApi2/> */}
+        {/* <DeletePostApi/> */}
+        {/* <PreFilledFormData/> */}
+        {/* <PutAPIMethod/> */}
+        {/* <MyCounterApp/> */}
+
+
+
+
+  {/* ====== Axios Component ==== */}
+        {/* <AxiosGetRequest/> */}
+        {/* <AxiosPostRequest/> */}
+        {/* <AxiosPutRequest/> */}
+        {/* <AxiosDeleteRequest/> */}
+        {/* <MyRouters/> */}
       
-      {/* =========== Hooks========= */}
+      
 
-      {/* <UseState/> */}
-      {/* <UseEffectHook/> */}
-      {/* <UseEffectWithPropsParent/> */}
-      {/* <UseEffectWithCondition/> */}
-      {/* <UseEffectWithConditionParent/> */}
-      {/* <UseEffectExample/> */}
-      {/* <UseMemoHooks/> */}
-      {/* <UseCallBack/> */}
-      {/* <UseRefHook/> */}
-      {/* <ForwardRefHook/> */}
-      {/* <UseReducer/> */}
-      {/* <PreviousState/> */}
-      {/* <PreviousPropsParent/> */}
-      {/* <StateWithObject/> */}
-
-      {/* =========== Context Api========= */}
-      {/* <ContextWithApiHooks/> */}
-
-      {/* ====== Array Maps ==== */}
-      {/* <ArrayListing/> */}
-      {/* <BootstrapArrayListing/> */}
-      {/* <NestedArrayWithBootstrap/> */}
-
-      {/* ====== ReuseComponent==== */}
-      {/* <ReuseComponent/> */}
-      {/* <LiftingStateUp/> */}
-
-      {/* ====== Control Component==== */}
-      {/* <ControlComponent/> */}
-      {/* <UnControlComponent/> */}
-
-      {/* ====== API Intigretion==== */}
-      {/* <UserDataShow/> */}
-      {/* <UserPost/> */}
-
-      {/* ====== HOC Component ==== */}
-      {/* <HocAssembleGroup/> */}
-
-      {/* ====== Spliting LezyLoding Suspense Component ==== */}
-      {/* <CodeSpliting/> */}
-      {/* <LezyLodedSuspense/> */}
-      {/* <Apicaoolling/> */}
-      {/* <ApiForm/> */}
-      {/* <FormPostApi/> */}
-      <DeletePostApi/>
-
-
-    </div>
+      </div>
+    </>
+    
   );
 }
 

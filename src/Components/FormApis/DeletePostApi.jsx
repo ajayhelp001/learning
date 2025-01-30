@@ -20,14 +20,13 @@ const DeletePostApi = () => {
     }, [])
 
     const deleteData = (userId) =>{
-        console.log(userId);
+        // console.log(userId);
         fetch(`https://reqres.in/api/users?page=2/${userId}`,{
             method: "DELETE",
         }).then((result) => {
-            result.JSON().then((response) => {
-                // showData()
+            result.json().then((response) => {
+                showData()
                 console.log(response);
-                
             })
         })
     }
