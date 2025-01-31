@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import ClassBasedComponent from './Components/ClassBasedComponent';
 import Demo1 from './Components/Demo1';
 import EventFunction from './Components/EventFunction';
@@ -62,12 +63,31 @@ import AxiosGetRequest from './Axios/AxiosGetRequest';
 import AxiosPostRequest from './Axios/AxiosPostRequest';
 import AxiosPutRequest from './Axios/AxiosPutRequest';
 import AxiosDeleteRequest from './Axios/AxiosDeleteRequest';
+import Home from './MyRouter/Home';
+import About from './MyRouter/About';
+import NavbarComponent from './MyRouter/NavbarComponent';
+import PageNotFound from './MyRouter/PageNotFound';
+import DynemicRouter from './MyRouter/DynemicRouter';
+import ShowDynemicLinkData from './MyRouter/ShowDynemicLinkData';
 
 
 function App() {
   return (
     <>
       <div className="App container">
+    <BrowserRouter>
+    <NavbarComponent/>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/about" element={<About/>} />
+        {/* "/*" jab Route nhi mile to 404 page ko render karta h ye  */}
+        <Route path="/*" element={<PageNotFound/>} />
+        {/* jab log out ya log in ke bad kisi page pr nevigate karwana ho to es tarah karte h */}
+        {/* <Route path="/*" element={<Navigate to="/"/>} /> */}
+        <Route path="/dynemic-route" element={<DynemicRouter/>} />
+        <Route path="/dynemic-route/:name" element={<ShowDynemicLinkData/>} />
+      </Routes>
+    </BrowserRouter>
 
         
         {/* <ClassBasedComponent/> */}
