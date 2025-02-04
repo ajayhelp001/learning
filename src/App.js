@@ -69,6 +69,15 @@ import NavbarComponent from './MyRouter/NavbarComponent';
 import PageNotFound from './MyRouter/PageNotFound';
 import DynemicRouter from './MyRouter/DynemicRouter';
 import ShowDynemicLinkData from './MyRouter/ShowDynemicLinkData';
+import SearchPeramiterHook from './MyRouter/SearchPeramiterHook';
+import Contact from './MyRouter/Contact';
+import Company from './MyRouter/NestedRouting/Company';
+import Student from './MyRouter/NestedRouting/Student';
+import Admin from './MyRouter/NestedRouting/Admin';
+import Faculty from './MyRouter/NestedRouting/Faculty';
+import AdminPanel from './MyRouter/ProtectedRouting/AdminPanel';
+import Login from './MyRouter/ProtectedRouting/Login';
+import ProtectedRouting from './MyRouter/ProtectedRouting/ProtectedRouting';
 
 
 function App() {
@@ -80,12 +89,23 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About/>} />
+        <Route path="/contact" element={<Contact/>} />
         {/* "/*" jab Route nhi mile to 404 page ko render karta h ye  */}
         <Route path="/*" element={<PageNotFound/>} />
         {/* jab log out ya log in ke bad kisi page pr nevigate karwana ho to es tarah karte h */}
-        {/* <Route path="/*" element={<Navigate to="/"/>} /> */}
+        <Route path="/*" element={<Navigate to="/"/>} />
         <Route path="/dynemic-route" element={<DynemicRouter/>} />
         <Route path="/dynemic-route/:name" element={<ShowDynemicLinkData/>} />
+        <Route path="/search" element={<SearchPeramiterHook/>} />
+        <Route path="/company/" element={<Company/>}>
+          <Route path="student" element={<Student/>} />
+          <Route path="admin/" element={<Admin/>}>
+            <Route path="form" element={<FormValidation/>}/>
+          </Route>
+          <Route path="faculty" element={<Faculty/>} />
+        </Route>
+        <Route path="/admin-panel" element={<ProtectedRouting  Component={AdminPanel} />} />
+        <Route path="/login" element={<Login/>} />
       </Routes>
     </BrowserRouter>
 
